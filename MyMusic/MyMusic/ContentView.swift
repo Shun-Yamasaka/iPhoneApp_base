@@ -12,14 +12,8 @@ struct ContentView: View {
     let soundPlayer = SoundPlayer()
     var body: some View {
         ZStack{
-            // 背景画像を指定する
-            Image("background")
-                // リサイズする
-                .resizable()
-                // 画像いっぱいになるようにセーフエリア外まで表示されるように指定
-                .ignoresSafeArea()
-                // アスペクト比（縦横比）を維持して短編基準に収まるようにする
-                .aspectRatio(contentMode: .fill)
+            // 背景画像を表示する
+            BackgroundView(imageName: "background")
             
             // 水平にレイアウト（横方向にレイアウト）
             HStack{
