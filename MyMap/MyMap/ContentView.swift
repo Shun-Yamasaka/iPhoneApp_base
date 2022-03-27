@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        // 垂直にレイアウト（縦方向にレイアウト）
+        VStack{
+            // マップを表示
+            MapView(serchKey: "東京タワー")
+        } // VStack End
     }
 }
 
